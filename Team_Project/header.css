@@ -9,37 +9,30 @@ header {
     display: flex;
     height: 70px;
     align-items: center;
-}
-
-section:nth-child(1){
-    flex-basis: 10%;
-    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 section #logo{
    margin-left: 17px;
    width: 80px;
 }
-section:nth-child(2){flex-basis: 70%;}
-section:nth-child(3){
-    flex-basis: 20%;
-    height: 100%;
-}
 
-section>ul{
+section .top-menu{
     display: flex;
     list-style: none;
-    justify-content: flex-end;
     margin-right: 30px;
-    height: 100%;
     align-items: center;
     font-size: 14px;
 }
 
-section>ul a{
+section .top-menu a{
     text-decoration: none;
-    color: black;
     margin-left: 26px;
+}
+
+section .sign-up{
+    color: black;
 }
 
 section .login{
@@ -49,4 +42,83 @@ section .login{
     background-color: #21c531;
     padding: 0 23px;
     line-height: 35px;
+}
+
+.images-section{
+    position: relative;
+    background-image: url("img/index-main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 100%; */
+    height: 540px;
+    background-position: center bottom;
+    color : white;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.introduction .images-section #title{
+    font-size: 42px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    margin-top: 12px;
+}
+
+.introduction .images-section #explanation{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 22px auto 0;
+}
+
+.intro-list{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.intro-list>li{
+    width: 300px;
+    display: inline-block;
+    list-style: none;
+}
+
+.intro-list>li:not(:nth-child(1)){
+    margin-left: 46px;
+}
+
+.intro-list>li>img{
+    width: 100%;
+    height: 180px;
+}
+
+.list-text{
+    margin-top: 16px;
+    text-align: left;
+}
+.list-text p{
+    margin-top: 6px;
+}
+
+footer{
+    min-width: 1000px;
+    min-height: 120px;
+    background-color: #2a3038;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>p{
+    font-size: 13px;
+    color: #777;
+}
+
+footer>article>*{
+    text-decoration: none;
+    font-size: 13px;
+    color: #777;
 }
