@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    height: 70px;
+    align-items: center;
+}
+
+section:nth-child(1){
+    flex-basis: 10%;
+    display: flex;
+}
+
+section #logo{
+   margin-left: 17px;
+   width: 80px;
+}
+section:nth-child(2){flex-basis: 70%;}
+section:nth-child(3){
+    flex-basis: 20%;
+    height: 100%;
+}
+
+section>ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    margin-right: 30px;
+    height: 100%;
+    align-items: center;
+    font-size: 14px;
+}
+
+section>ul a{
+    text-decoration: none;
+    color: black;
+    margin-left: 26px;
+}
+
+section .login{
+    display: inline-block;
+    font-weight: 700;
+    color: #fafafa;
+    background-color: #21c531;
+    padding: 0 23px;
+    line-height: 35px;
+}
