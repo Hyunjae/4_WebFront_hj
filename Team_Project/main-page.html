@@ -7,45 +7,55 @@
     <title>Main Page</title>
 
     <link rel="stylesheet" href="css/main-page.css">
+    <script src="https://kit.fontawesome.com/345198b845.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <section>
-            <!-- 클릭 시 메인으로 이동하는 로고  -->
-            <a href="#">
-                <img src="images/home-logo.png" id="home-logo">
-            </a>
-        </section>
-
-        <section class="profile">
-            <!-- 내 정보 사진 -->
-            <button type="button" class="box">
-                <img src="images/profile-photo.png" id="profile-photo">
-            </button>
-        </section>
-    </header>
+    <section class="header-area">
+        <header>
+            <div>
+                <!-- 클릭 시 메인으로 이동하는 로고  -->
+                <a href="#">
+                    <img src="images/home-logo.png" id="home-logo">
+                </a>
+            </div>
+    
+            <div class="profile">
+                <!-- 내 정보 사진 -->
+                <button type="button" class="box">
+                    <img src="images/profile-photo.png" id="profile-photo">
+                </button>
+            </div>
+        </header>
+    </section>
 
     <!-- 네비게이션 -->
-    <nav>
-        <div class="mainPage-menu">
-            <a href="#">내 모임</a>
-            <a href="#">모임찾기</a>
-        </div>
-
-        <div class="mainPage-optionBox">
-            <a href="#">목록 편집</a>
-            <a href="#">본드 가이드</a>
-        </div>
-    </nav>
+    <section class="nav-area">
+        <nav>
+            <div class="mainPage-menu">
+                <a href="#">내 모임</a>
+                <a href="#">모임찾기</a>
+            </div>
+    
+            <div class="mainPage-optionBox">
+                <a href="#">목록 편집</a>
+                <a href="#">본드 가이드</a>
+            </div>
+        </nav>
+    </section>
 
 
     <main>
         <!-- 내 모임 리스트 -->
-        <section>
+        <section class="myGroup-area">
             <ul class="myGroup-list">
                 <li class="groupCardItem">
                     <a href="#">
-                        <div class="groupInfo">
+                        <div class="make-icon">
+                            <span id="plus-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </div>
+                        <div class="groupInfo make-text">
                             <span class="make-group">만들기</span>
                         </div>
                     </a>
@@ -79,7 +89,12 @@
                 </li>
             </ul>
         </section>
-        <section class="my-group-schedule"></section>
+        <section class="myGroup-schedule">
+            <h3>내 모임 정모</h3>
+            <div class="schedule">
+                
+            </div>
+        </section>
     </main>
     
     <footer>
