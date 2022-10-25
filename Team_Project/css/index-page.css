@@ -59,6 +59,8 @@ header .top-menu a{
 .index-menu{
     padding-top: 65px;
 }
+
+.index-menu-area{
     width: 1000px;
     height: 500px;
     display: flex;
