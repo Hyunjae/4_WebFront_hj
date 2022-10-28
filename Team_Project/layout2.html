@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout sample</title>
+
+    <link rel="stylesheet" href="css/layout2-style.css">
+    
+</head>
+<body>
+    <header>
+        <section>
+            <!-- 클릭 시 메인으로 이동하는 로고  -->
+            <a href="#">
+                <img src="resources/images/home-logo.png" id="home-logo">
+            </a>
+        </section>
+
+        <section class="profile">
+            <!-- 내 정보 사진 -->
+            <button type="button" class="box">
+                <img src="resources/images/admin-profile-icon.png" id="profile-photo">
+            </button>
+        </section>
+    </header>
+
+    <main> <!-- for background color -->
+
+        <section class="main"> <!-- main에 배경색을 주려고 별도의 main-section 추가함 -->
+            <aside class="sidebar">
+                
+                <nav class="admin-menu">
+                    <a href="#">공지사항</a>
+                    <ul> 밴드 관리
+                        <li><a href="#">회원</a></li>
+                        <li><a href="#">소모임</a></li>
+                        <li><a href="#">게시글</a></li>
+                    </ul>
+                    <a href="">신고</a>
+                </nav>
+                
+            </aside>
+            <section class="content">
+
+                <div class="content-header">
+                    <h6>경로</h6>
+                    <h3>메뉴 이름</h3>
+                </div>
+
+
+                <div class="content-body">
+                    
+                </div>
+
+            </section> <!-- admin-content end -->
+        </section> <!-- main-content end -->
+    </main>
+
+
+    <footer>
+        <p>
+            BOND &copy; 2022
+        </p>
+
+        <article>
+            <a href="#">블로그</a>
+            <span>|</span>
+            <a href="#">이용약관</a>
+            <span>|</span>
+            <a href="#">개인정보처리방침</a>
+            <span>|</span>
+            <a href="#">고객센터</a>
+        </article>
+
+    </footer>
+</body>
+</html>

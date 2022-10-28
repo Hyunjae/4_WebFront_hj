@@ -58,7 +58,7 @@ button{
 
 /* body */
 body{
-    background-color: rgba(0,0,0,0.03);
+    background-color: #eef0f3;
 }
 
 .myPage-layout{
@@ -67,19 +67,143 @@ body{
     width: 1034px;   
     margin: 0 auto;
     padding: 70px 0 0;
+    height: 700px;
+}
+
+/* 메뉴 사이드바 */
+.myPage-sidebar {
+    width: 208px;
+    background-color: white;
+    border-radius: 10px;
+    /* padding: 15px; */
+    overflow: hidden;
 }
 
 .myPage-menu {
-    width: 208px;
-    border-radius: 1px;
+    font-size: 18px;
+    color: #222222;
 }
 
-.myPage-menu>ul{
-    text-decoration: none;
+.myPage-menu ul{
+    list-style: none;
 }
 
-.myPage-menu>ul>li{
-    text-decoration: none;
+.myPage-menu>p{
     background-color: #f7f8f9;
+    display: block;
+    padding: 15px 30px 10px 20px;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(0,0,0,.04);
 }
 
+.myPage-menu a{
+    text-decoration: none;
+    padding: 10px 15px 10px 25px;
+    display: block;
+    color: #222222;
+    border-bottom: 1px solid rgba(0,0,0,.04);
+}
+
+.myPage-menu>a{
+    background-color: #f7f8f9;
+    padding: 12px 30px 15px 20px;
+    font-weight: 600;
+}
+
+/* content */
+.content-area{
+    background-color: white;
+    margin: 0 0 20px 20px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 920px;
+    height: 95%;
+}
+
+.content-header{
+    height: 56px;
+    padding: 0 15px;
+    border-bottom: 1px solid #e3e3e3;
+    line-height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+}
+
+/* 내정보 수정 */
+.myPage-row{
+    width: 100%
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-area{
+    height: 300px;
+}
+
+.myPage-row > * {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* 행 제목 */
+.myPage-row>label{
+    width: 30%;
+    color: #21c531;
+}
+
+.myPage-row>span{
+    width: 70%;
+}
+
+
+.profile-image-area{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+}
+
+#profile-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+
+
+/* footer */
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #BFBFBF;
+    
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+footer > p{
+    font-weight: 800;
+    margin: 16px 0;
+}
+
+footer > article > *{
+    font-size: 14px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer span{
+    padding : 0 10px;
+}

@@ -27,24 +27,69 @@
         </header>
     </section>
 
-    <div class="myPage-layout">
-        <aside class="myPage-menu">
-            <ul>
-                <li>
-                    <a href="#">내 정보</a>
-                </li>
-                <li>
-                    <a href="#">내가 쓴 글</a>
-                </li>
-            </ul>
-        </aside>
-        <main class="content-area">
+    <section class="myPage-layout">
+        <aside class="myPage-sidebar">
 
+            <nav class="myPage-menu">
+                <p>내 정보 수정</p>
+                <ul>
+                    <li><a href="#">- 프로필 수정</a></li>
+                    <li><a href="#">- 비밀번호 변경</a></li>
+                    <li><a href="#">- 탈퇴</a></li>
+                </ul>
+                <a href="#">내 글 조회</a>
+
+            </nav>
+
+        </aside>
+
+        <main class="content-area">
+            <div class="content-header">
+                <h2>내 정보 수정</h2>
+            </div>
+
+            <div class="content-body"></div>
+                <form action="#" method="post" name="myPage-frm">
+                
+                     <div class="myPage-row image-area">
+                        <h3>프로필 이미지</h3>
+                        <img id="profile-image" src="images/user.png">
+                            <span id="delete-image">x</span>
+                    </div>
+
+                    <div class="profile-btn-area">
+                        <label for="image-input">이미지 선택</label>
+
+                        <!-- accept 속성 : 업로드 가능한 파일 타입을 제한하는 속성 -->
+                        <input type="file" name="profileImage" id="image-input" accept="image/*">
+                        <button>변경하기</button>
+                    </div>
+
+                    <div class="myPage-row">
+                        <label>이메일</label>
+                        <span>hihi@naver.com</span>
+                    </div>
+
+                    <div class="myPage-row">
+                        <label>이름</label>
+                        <input type="text" name="memberNickname" value="김순자" maxlength="10">
+                    </div>
+                    
+                    <div class="myPage-row">
+                        <label>전화번호</label>
+                        <input type="text" name="memberTeL" value="01012341234" maxlength="11">
+                    </div>
+
+
+                    
+                </form>
+
+            </div>
 
         </main>
 
 
-    </div>
+    </section>
 
 
 
