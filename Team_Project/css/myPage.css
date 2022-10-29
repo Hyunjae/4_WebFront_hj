@@ -11,6 +11,11 @@ body{
     background-color: #f8f9fa;
     display: block;
 }
+
+input{
+    border : none;
+    outline: none;
+}
 /* Header */
 
 .header-area{
@@ -67,7 +72,7 @@ body{
     width: 1034px;   
     margin: 0 auto;
     padding: 70px 0 0;
-    height: 700px;
+    height: 664px;
 }
 
 /* 메뉴 사이드바 */
@@ -80,7 +85,7 @@ body{
 }
 
 .myPage-menu {
-    font-size: 18px;
+    font-size: 16px;
     color: #222222;
 }
 
@@ -105,7 +110,7 @@ body{
 }
 
 .myPage-menu>a{
-    background-color: #f7f8f9;
+    background-color: #f8f9fa;
     padding: 12px 30px 15px 20px;
     font-weight: 600;
 }
@@ -119,7 +124,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 920px;
-    height: 95%;
+    height: 70%;
 }
 
 .content-header{
@@ -133,33 +138,107 @@ body{
 }
 
 /* 내정보 수정 */
+.content-body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: nowrap;
+    padding-left: 10px;
+}
+
+.image-area{
+    width: 35%;
+    margin: 35px 10px 0;
+}
+
+.update-image{
+    margin: 30px auto 0;
+    width: 145px;
+    height: 145px;
+    border: 6px solid #BFBFBF;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.update-image>i{
+    font-size: 120px;
+    display: block;
+    text-align: center;
+    line-height: 150px;
+    color: #bfbfbf;
+}
+
+.profile-btn-area{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.profile-btn-area{
+    margin-top: 38px;
+}
+
+.profile-btn-area>p{
+    width: 2%;
+}
+
+.profile-btn-area>*:not(:nth-child(2)){
+    width: 42%;
+    height: 33px;
+    padding: 6px 5px;
+    border: 2px solid #bfbfbf;
+    background-color: #bfbfbf;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+.profile-btn-area>*:not(:nth-child(2)):hover{
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 15%);
+}
+
+.profile-btn-area>label:first-child{
+    background-color: white;
+    color: #222222;
+}
+
+#image-input{display: none;}
+
+/* 프로필 수정 */
 .myPage-row{
-    width: 100%
+    width: 100%;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.image-area{
-    height: 300px;
+.update-profile{
+    width: 65%;
+    margin: 55px 25px 0 30px;
 }
 
-.myPage-row > * {
+/* 행 제목 */
+.myPage-row>label, .image-area>label{
+    color: #21c531;
     font-size: 18px;
     font-weight: bold;
 }
 
-/* 행 제목 */
 .myPage-row>label{
     width: 30%;
-    color: #21c531;
 }
 
 .myPage-row>span{
-    width: 70%;
+    width: 60%;
 }
 
+.myPage-row>*:nth-child(3){
+    width: 10%;
+}
 
 .profile-image-area{
     width: 150px;
@@ -174,13 +253,93 @@ body{
     border-radius: 50%;
 }
 
+.myPage-row>button{
+    background-color: #bfbfbf;
+    border: 2px solid #BFBFBF;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    line-height: 20px;
+}
+.myPage-row>button:hover{
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 15%);
+}
+
+/* 패스워드 변경 */
+.changePw{
+    width: 100%;
+    padding: 32px 0;
+}
+
+.myPage-row>input[type="password"]{
+    width: 43%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,.04);;
+}
+
+.myPage-row>input[type="password"]:focus-within{
+    border-bottom-color: #21c531;
+}
+
+.pw-row{
+    height: 60px;
+}
+
+.pw-row>label{
+    width: 20%;
+}
+
+.changePw>button{
+    width: 180px;
+    height: 50px;
+    display: block;
+    margin: 35px auto 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #222222;
+}
 
 
+/* 서비스 탈퇴 */
+.content-body>form[name="secession"]{
+    margin: 0 auto;
+}
+
+.secession-terms{
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.secession-terms>h4{
+    margin: 12px 0;
+    color: #21c531;
+    font-size: 16px;
+}
+
+.secession-agree{
+    margin: 0 0 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.secession-pw>label{
+    width: 15%;
+}
+
+.secession-submit{
+    font-size: 16px;
+    margin-left: 20px;
+}
 
 /* footer */
 footer{
     width: 100%;
-    height: 200px;
+    height: 100px;
     background-color: #BFBFBF;
     
     display: flex;
@@ -192,7 +351,7 @@ footer{
 
 footer > p{
     font-weight: 800;
-    margin: 16px 0;
+    margin: 10px 0;
 }
 
 footer > article > *{
