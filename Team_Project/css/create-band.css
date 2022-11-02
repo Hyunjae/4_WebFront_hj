@@ -7,6 +7,8 @@
     font-family: 'nanumsquare', serif;
 }
 
+ul{list-style : none;}
+
 body{
     background-color: #f8f9fa;
     display: block;
@@ -58,7 +60,6 @@ button{
 
 /* main */
 main{
-    margin-top : 10px;
     height: 100vh;
     width: 100%;
 }
@@ -67,7 +68,7 @@ main{
 .create-band{
     width: 840px;
     margin: 0 auto;
-    padding-top: 58px;
+    padding-top: 80px;
 }
 
 .create-band h4{
@@ -86,18 +87,23 @@ fieldset {border: none;}
     border: none;
     border-bottom: 1px solid #ccc;
     font-size: 30px;
-    font-weight: 600;
-    color: #333;
+    font-weight: 400;
+    color: #777;
     display: block;
     width: 100%;
     margin-right: 0;
+    background-color: #f8f9fa;
+    outline: none;
 }
-
 
 .select-bandInfo{
     display: flex;
     justify-content: center;
     margin-top: 30px;
+}
+
+fieldset h4{
+    font-size: 18px;
 }
 
 /* 밴드 사진 */
@@ -109,6 +115,8 @@ fieldset {border: none;}
     text-align: center;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0 0 1px rgb(0 0 0 / 20%), 0 1px 2px rgb(0 0 0 / 8%);
+
 }
 
 .bandImage>i{
@@ -135,17 +143,79 @@ fieldset {border: none;}
 }
 
 
-#bandImage-input{display: none;}
+#bandImage-input{ display: none;}
 
 /* 밴드 카테고리 */
 .bandCategory{
     width: 540px;
     height: 225px;
-    background-color: blue;
+    background-color: #f8f9fa;
     margin-left: 30px;
 }
 
+.bandCategory>p{
+    font-size: 18px;
+    font-weight: 600;
+}
 
+.select-category{
+    height: 202px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+}
+
+.select-category li{
+    display: inline-block;
+    width: 15%;
+    height: 85px;
+    background-color: #fff;
+    margin-top: 17px;
+    text-align: center;
+    border-radius: 3px;
+    margin-right: 3px;
+    cursor: pointer;
+    box-shadow: 0 0 1px rgb(0 0 0 / 20%), 0 1px 2px rgb(0 0 0 / 8%);
+}
+
+.select-category li:hover{
+    background-color: #ebebeb;
+}
+
+.select-category i{
+    padding: 18px 0 10px;
+    display: block;
+    font-size: 25px;
+    color: #ccc;
+}
+
+.select-category li:nth-child(1)>i{color:rgb(247, 205, 70);}
+.select-category li:nth-child(2)>i{color:rgb(234, 169, 59);}
+.select-category li:nth-child(3)>i{color:rgb(226, 134, 49);}
+.select-category li:nth-child(4)>i{color:rgb(217, 87, 44);}
+.select-category li:nth-child(5)>i{color:rgb(209, 46, 38);}
+.select-category li:nth-child(6)>i{color:rgb(183, 39, 124);}
+.select-category li:nth-child(7)>i{color:rgb(102, 40, 126);}
+.select-category li:nth-child(8)>i{color:rgb(33, 79, 153);}
+.select-category li:nth-child(9)>i{color:rgb(52, 120, 191);}
+.select-category li:nth-child(10)>i{color:rgb(69, 153, 163);}
+.select-category li:nth-child(11)>i{color:rgb(66, 149, 76);}
+.select-category li:nth-child(12)>i{color:rgb(157, 186, 65);}
+
+.select-category label{
+    font-size: 14px;
+    color: #333;
+}
+
+#category-check{display: none;}
+
+fieldset>span{
+    display: block;
+    font-size: 12px;
+    color: #333;
+    margin-top: 12px;
+    padding-left: 26px;
+}
 
 /* 밴드 공개범위 */
 .bandOpen{

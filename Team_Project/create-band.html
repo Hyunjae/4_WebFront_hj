@@ -28,24 +28,9 @@
         </header>
     </section>
 
-    <!-- 네비게이션 -->
-    <section class="nav-area">
-        <nav>
-            <div class="mainPage-menu">
-                <a href="#">내 모임</a>
-                <a href="#">모임찾기</a>
-            </div>
-    
-            <div class="mainPage-optionBox">
-                <a href="#">목록 편집</a>
-                <a href="#">본드 가이드</a>
-            </div>
-        </nav>
-    </section>
-
     <main>
         <section class="create-band">
-            <form action="">
+            <form action="#">
                 <fieldset>
                     <div class="bandInfo">
 
@@ -63,19 +48,78 @@
                                 <p>사진 추가</p>
                                 <input type="file" id="bandImage-input" accept="image/*">
                             </div>
-
+                            
                             <div class="bandCategory">
                                 <p>밴드 카테고리 선택</p>
                                 <div class="select-category">
                                     <ul>
-                                        
+                                        <li>
+                                            <i class="fa-solid fa-dumbbell"></i>
+                                            <label for="category-check">운동</label>
+                                            <input type="checkbox" id="category-check" name="category-list">
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-democrat"></i>
+                                            <label for="category-check">공예</label>
+                                            <input type="checkbox" id="category-check" name="category-list">
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-gamepad"></i>
+                                            <label for="category-check">게임</label>
+                                            <input type="checkbox" id="category-check" name="category-list">
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-palette"></i>
+                                            <label for="category-check">문화/예술</label>
+                                            <input type="checkbox" id="category-check" name="category-list">
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-book"></i>
+                                            <label for="category-check">자기개발</label>
+                                            <input type="checkbox" id="category-check" name="category-list">
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-campground"></i>
+                                            <label for="category-check">여행/캠핑</label>
+                                            <input type="checkbox" id="category-check" name="category-list">
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-photo-film"></i>
+                                            <label for="category-check">사진</label>
+                                            <input type="checkbox" id="category-check" name="category-list">
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-wheat-awn"></i>
+                                            <label for="category-check">농예</label>
+                                            <input type="checkbox" id="category-check" name="category-list">
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-kitchen-set"></i>
+                                            <label for="category-check">요리</label>
+                                            <input type="checkbox" id="category-check" name="category-list">
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-paint-roller"></i>
+                                            <label for="category-check">인테리어</label>
+                                            <input type="checkbox" id="category-check" name="category-list">
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-face-grin-hearts"></i>
+                                            <label for="category-check">팬클럽</label>
+                                            <input type="checkbox" id="category-check" name="category-list">
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-comments-dollar"></i>
+                                            <label for="category-check">경제</label>
+                                            <input type="checkbox" id="category-check" name="category-list">
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-
+                    <span>밴드이름과 사진은 개설 후에도 변경할 수 있어요</span>
+                    
                     <div class="bandOpen">
                         <h4>밴드 공개</h4>
                         <div class="openArea">
