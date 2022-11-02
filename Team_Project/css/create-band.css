@@ -1,0 +1,153 @@
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+*{
+    box-sizing: border-box;
+
+    padding: 0;
+    margin: 0;
+    font-family: 'nanumsquare', serif;
+}
+
+body{
+    background-color: #f8f9fa;
+    display: block;
+}
+/* Header */
+
+.header-area{
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    box-shadow: 0 1.4px 1.3px 0 rgb(62 73 89 / 7%);
+    z-index: 2000;
+    display: block;
+}
+
+header{
+    width: 1140px;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+#home-logo{
+    width: 80px;
+    padding-top: 4px;
+}
+
+.box {
+    width: 40px;
+    height: 40px;
+    border-radius: 70%;
+    overflow: hidden;
+    justify-content: right;
+}
+
+#profile-photo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* main */
+main{
+    margin-top : 10px;
+    height: 100vh;
+    width: 100%;
+}
+
+/* 모임 생성 */
+.create-band{
+    width: 840px;
+    margin: 0 auto;
+    padding-top: 58px;
+}
+
+.create-band h4{
+    display: block;
+    margin-bottom: 19px;
+}
+
+fieldset {border: none;}
+
+/* 밴드 이름 입력 */
+
+.bandName{ height: 54px;}
+
+.bandName>input{
+    line-height: 54px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+    display: block;
+    width: 100%;
+    margin-right: 0;
+}
+
+
+.select-bandInfo{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* 밴드 사진 */
+.bandImage{
+    width: 300px;
+    height: 225px;
+    background-color: #ebebeb;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bandImage>i{
+    font-size: 90px;
+    color: #ccc;
+    padding-top: 50px;
+}
+
+.bandImage>p{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #777;
+}
+
+.bandImage>label{
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+
+#bandImage-input{display: none;}
+
+/* 밴드 카테고리 */
+.bandCategory{
+    width: 540px;
+    height: 225px;
+    background-color: blue;
+    margin-left: 30px;
+}
+
+
+
+/* 밴드 공개범위 */
+.bandOpen{
+    margin-top: 48px;
+}

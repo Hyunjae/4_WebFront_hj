@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+
+    <link rel="stylesheet" href="css/create-band.css">
+    <script src="https://kit.fontawesome.com/345198b845.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header-area">
+        <header>
+            <div>
+                <!-- 클릭 시 메인으로 이동하는 로고  -->
+                <a href="#">
+                    <img src="images/home-logo.png" id="home-logo">
+                </a>
+            </div>
+    
+            <div class="profile">
+                <!-- 내 정보 사진 -->
+                <button type="button" class="box">
+                    <img src="images/profile-photo.png" id="profile-photo">
+                </button>
+            </div>
+        </header>
+    </section>
+
+    <!-- 네비게이션 -->
+    <section class="nav-area">
+        <nav>
+            <div class="mainPage-menu">
+                <a href="#">내 모임</a>
+                <a href="#">모임찾기</a>
+            </div>
+    
+            <div class="mainPage-optionBox">
+                <a href="#">목록 편집</a>
+                <a href="#">본드 가이드</a>
+            </div>
+        </nav>
+    </section>
+
+    <main>
+        <section class="create-band">
+            <form action="">
+                <fieldset>
+                    <div class="bandInfo">
+
+                        <h4>밴드 이름</h4>
+
+                        <div class="bandName">
+                            <input type="text" placeholder="밴드 이름 입력" maxlength="50">
+                        </div>
+
+                        <div class="select-bandInfo">
+
+                            <div class="bandImage">
+                                <i class="fa-solid fa-camera-retro"></i>
+                                <label for="bandImage-input"></label>
+                                <p>사진 추가</p>
+                                <input type="file" id="bandImage-input" accept="image/*">
+                            </div>
+
+                            <div class="bandCategory">
+                                <p>밴드 카테고리 선택</p>
+                                <div class="select-category">
+                                    <ul>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="bandOpen">
+                        <h4>밴드 공개</h4>
+                        <div class="openArea">
+            
+                        </div>
+            
+                    </div>
+
+                </fieldset>
+
+            </form>
+            
+        </section>
+    </main>
+
+</body>
+</html>
