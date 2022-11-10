@@ -96,3 +96,57 @@ document.getElementById("btn2").addEventListener("click", function(){
     });
 
 })
+
+
+// innerHTML
+const btn3 = document.getElementById("btn3");
+const div3 = document.getElementById("div3");
+
+let count3 = 1;
+btn3.addEventListener("click", function(){
+    if(count3 <= 10) {
+        const input = "<input type='text'>";
+
+        div3.innerHTML += "<div>"+ count3 + input +"</div>";
+        count3++;   // 1증가
+    }
+    // 누적해서 새로 생기는게 아니라
+    // 기존에 있던 내용을 읽어와서 있던건 지우고 새로 만드는것
+    // 1,2 -> 1,2,3이 될 때 기존 1,2는 지우고 1,2,3을 만드는 것
+    // (요소 창에서 버튼 누르면 변화되는 부분이 깜빡거리는데 모두 다 깜빡거림)
+})
+
+
+// createElement()
+const btn4 = document.getElementById("btn4");
+const div4 = document.getElementById("div4");
+
+let count4=1;
+
+btn4.addEventListener("click", function(){
+    if(count4 <= 10){
+
+        // document.createElement("태그명") -> 해당 태그 요소를 생성하여 반환
+        // 요소가 생성될 뿐이지 화면에 바로 추가되지는 않는다
+
+        const div = document.createElement("div");
+        const input = document.createElement("input");
+
+        // #div4 > div > input
+
+        // div의 내용으로 count4 추가 후 1증가
+        div.innerText = count4;
+        count4++;
+
+        // input을 div의 마지막 자식으로 추가
+        // 요소A.append(노드 또는 요소B) : 요소의 마지막 자식으로 추가
+        div.append(input);
+        
+        // #div4의 마지막 자식으로 추가
+        div4.append(div);
+    
+        // 요소 창에서 새로 생기는 부분만 깜빡거림, 기존 내용에 추가되는 것
+    }
+
+
+});
