@@ -19,11 +19,38 @@
                 </a>
             </div>
     
-            <div class="profile">
-                <!-- 내 정보 사진 -->
-                <button type="button" class="box">
-                    <img src="images/profile-photo.png" id="profile-photo">
-                </button>
+            <div class="header-widget-area">
+                <ul class="widget-list">
+                    <li class="widget-item bell-icon">
+                        <!-- 알림 -->
+                        <a href="#">
+                            <i class="fa-solid fa-bell bell-icon"  style="color: #999;"></i>
+                        </a>
+                    </li>
+
+                    <li class="widget-item chat-icon">
+                        <!-- 채팅 -->
+                        <a href="#">
+                            <i class="fa-solid fa-comment-dots chat-icon" style="color: #999;"></i>
+                        </a>
+                    </li>
+
+                    <li class="widget-item">
+                        <!-- 내 정보 사진 -->
+                        <label for="header-menu-toggle">
+                            <button type="button" class="box">
+                                <img src="images/profile-photo.png" id="profile-photo">
+                            </button> 
+                            
+                            <i class="fa-solid fa-caret-down caret-icon"></i>
+                            <input type="checkbox" id="header-menu-toggle">
+                            <div id="header-menu">
+                                <a href="#">내정보</a>
+                                <a href="#">로그아웃</a>
+                            </div>
+                        </label>
+                    </li>
+                </ul>
             </div>
         </header>
     </section>

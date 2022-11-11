@@ -7,6 +7,8 @@
     font-family: 'nanumsquare', serif;
 }
 
+ul{list-style : none;}
+
 body{
     background-color: #f8f9fa;
     display: block;
@@ -38,11 +40,34 @@ header{
 }
 
 .box {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 70%;
     overflow: hidden;
     justify-content: right;
+}
+
+.header-widget-area{
+    display: block;
+
+}
+
+.widget-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    position: relative;
+}
+
+.chat-icon{
+    font-size: 1.1em;
+    width: 30%;
+}
+
+.bell-icon{
+    font-size: 1.1em;
+    width: 30%;
 }
 
 #profile-photo{
@@ -50,6 +75,71 @@ header{
     height: 100%;
     object-fit: cover;  
     cursor: pointer;
+}
+
+.widget-item{
+    width: 60%
+}
+
+.caret-icon{
+    padding-left: 5px;
+    padding-top: 8px;
+}
+
+.caret-icon:hover{
+    color: #999;
+}
+
+label[for='header-menu-toggle']{
+    cursor: pointer;
+    display: flex;
+
+}
+
+#header-menu-toggle{
+    display: none;
+}
+
+#header-menu-toggle + div{
+    display: none;
+}
+
+#header-menu-toggle:checked + div{
+    display: block;
+}
+
+#header-menu{
+    position: absolute;
+    z-index: 1000;
+    width: 100px;
+    height: 75px;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 14px;
+
+    top: 38px;
+    right: 8px;
+}
+
+#header-menu > a{
+    display: flex;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+#header-menu > a:first-child{
+    border-bottom: 1px solid #ccc;
+}
+
+#header-menu > a:hover{
+    color: #222;
+    font-weight: 600;
+
 }
 
 button{
