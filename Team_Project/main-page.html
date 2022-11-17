@@ -21,7 +21,7 @@
     
             <div class="header-widget-area">
                 <ul class="widget-list">
-                    <li class="widget-item bell-icon">
+                    <li class="widget-item bell-ㄴicon">
                         <!-- 알림 -->
                         <a href="#">
                             <i class="fa-solid fa-bell bell-icon"  style="color: #999;"></i>
@@ -37,18 +37,19 @@
 
                     <li class="widget-item">
                         <!-- 내 정보 사진 -->
-                        <label for="header-menu-toggle">
-                            <button type="button" class="box">
-                                <img src="images/profile-photo.png" id="profile-photo">
+                        <div class="dropdown">
+                            <button type="button" class="dropbtn" onclick="dropDown()">
+                                <span>
+                                    <img src="images/user-icon.png" id="profile-photo">
+                                </span>
+                                <i class="fa-solid fa-caret-down caret-icon" id="triangle-icon"></i>
                             </button> 
                             
-                            <i class="fa-solid fa-caret-down caret-icon"></i>
-                            <input type="checkbox" id="header-menu-toggle">
-                            <div id="header-menu">
+                            <div id="myDropdown" class="dropdown-content">
                                 <a href="#">내정보</a>
                                 <a href="#">로그아웃</a>
                             </div>
-                        </label>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -141,5 +142,6 @@
 
     </footer>
 
+    <script src="js/main-page.js"></script>
 </body>
 </html>
