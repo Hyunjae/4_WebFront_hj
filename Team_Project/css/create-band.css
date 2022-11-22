@@ -66,7 +66,7 @@ main{
 
 /* 모임 생성 */
 .create-band{
-    width: 840px;
+    width: 850px;
     margin: 0 auto;
     padding-top: 80px;
 }
@@ -90,7 +90,7 @@ fieldset {border: none;}
     font-weight: 400;
     color: #777;
     display: block;
-    width: 100%;
+    width: 850px;
     margin-right: 0;
     background-color: #f8f9fa;
     outline: none;
@@ -110,7 +110,6 @@ fieldset h4{
 .bandImage{
     width: 300px;
     height: 225px;
-    background-color: #ebebeb;
     position: relative;
     text-align: center;
     border-radius: 10px;
@@ -119,27 +118,19 @@ fieldset h4{
 
 }
 
-.bandImage>i{
-    font-size: 90px;
-    color: #ccc;
-    padding-top: 50px;
-}
-
-.bandImage>p{
-    margin-top: 15px;
-    font-size: 20px;
-    font-weight: 600;
-    color: #777;
-}
-
 .bandImage>label{
     display: block;
-    height: 100%;
+    /* height: 100%;
     position: absolute;
     top: 0;
     right: 0;
-    left: 0;
+    left: 0; */
     cursor: pointer;
+}
+
+#select-photo{
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -160,6 +151,10 @@ fieldset h4{
 
 .select-category{
     height: 202px;
+}
+
+.select-category>ul{
+    height: 100%;
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-end;
@@ -168,40 +163,40 @@ fieldset h4{
 
 .select-category li{
     display: inline-block;
-    position:relative;
     width: 15%;
     height: 85px;
-    background-color: #fff;
     text-align: center;
     border-radius: 3px;
     margin-top: 16px;
     box-shadow: 0 0 1px rgb(0 0 0 / 20%), 0 1px 2px rgb(0 0 0 / 8%);
+    overflow: hidden;
 }
 
 .select-category label{
     display: block;
     height: 100%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    background-color: #fff;
     line-height: 100%;
-    padding-top: 55px;
 }
 
-.select-category>ul>li:hover{
+.select-category label:hover{
     /* background-color: #ebebeb; */
     background-color: rgba(235, 235, 235, 0.3);
     cursor: pointer;
 }
 
 .select-category li>input:checked ~ label{
-    background-color: rgba(235, 235, 235, 0.5);
+    background-color: rgba(33, 197, 49, 0.8);
+    color: white;
+    font-weight: 600;
+}
+
+.select-category li>input:checked ~ label>i{
+    color: white;
 }
 
 .select-category i{
-    padding: 18px 0 10px 0;
+    padding: 18px 0 12px 0;
     display: block;
     font-size: 25px;
     color: #ccc;
@@ -278,8 +273,8 @@ fieldset>span{
     padding: 3px 0 0 0;
     font-size:14px;
     color: #ccc;
+    background-color: white;
 }
-
 
 .check-text{
     margin-left: 12px;
@@ -296,4 +291,42 @@ fieldset>span{
     line-height: 22px;
     letter-spacing: -0.5px;
     color: #777;
+}
+
+/* 체크시 아이콘 색상 변경 */
+
+input[name="openType-check"]:checked+span i{
+    background-color: #21c531;
+    color: white;
+    border: white;
+    padding-top: 5px;
+}
+
+/* 제출 버튼 */
+.create-btn{
+    text-align: center;
+    margin: 50px 0 80px;
+    padding-right: 20px;
+}
+
+.create-btn>*{
+    width: 140px;
+    height: 44px;
+    padding: 0 30px;
+    font-size: 14px;
+    font-weight: 600;
+    /* letter-spacing: 1.1px; */
+}
+
+button[type="reset"] {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #666;
+    
+}
+
+button[type="submit"]{
+    border: none;
+    background-color: #888;
+    color: white;
 }

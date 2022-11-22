@@ -30,22 +30,22 @@
 
     <main>
         <section class="create-band">
-            <form action="#">
+            <form action="#" method="POST" id="createForm">
                 <fieldset>
                     <div class="bandInfo">
 
                         <h4>밴드 이름</h4>
 
                         <div class="bandName">
-                            <input type="text" placeholder="밴드 이름 입력" maxlength="50">
+                            <input type="text" placeholder="밴드 이름 입력" maxlength="50" id="bondName">
                         </div>
 
                         <div class="select-bandInfo">
 
                             <div class="bandImage">
-                                <i class="fa-solid fa-camera-retro"></i>
-                                <label for="bandImage-input"></label>
-                                <p>사진 추가</p>
+                                <label for="bandImage-input">
+                                    <img src="/images/select-photo.jpg" id="select-photo">
+                                </label>
                                 <input type="file" id="bandImage-input" accept="image/*">
                             </div>
                             
@@ -55,63 +55,75 @@
                                     <ul>
                                         <li>
                                             <input type="radio" id="excercise" class="category-list" name="category-list">
-                                            <i class="fa-solid fa-dumbbell"></i>
-                                            <label for="excercise">운동</label>
+                                            <label for="excercise">
+                                                <i class="fa-solid fa-dumbbell"></i>
+                                            운동</label>
                                         </li>
                                         <li>
                                             <input type="radio" id="craft" class="category-list" name="category-list">
-                                            <i class="fa-solid fa-democrat"></i>
-                                            <label for="craft">공예</label>
+                                            <label for="craft">
+                                                <i class="fa-solid fa-democrat"></i>
+                                            공예</label>
                                         </li>
                                         <li>
                                             <input type="radio" id="game" class="category-list" name="category-list">
-                                            <i class="fa-solid fa-gamepad"></i>
-                                            <label for="game">게임</label>
+                                            <label for="game">
+                                                <i class="fa-solid fa-gamepad"></i>
+                                            게임</label>
                                         </li>
                                         <li>
                                             <input type="radio" id="art" class="category-list" name="category-list">
-                                            <i class="fa-solid fa-palette"></i>
-                                            <label for="art">문화/예술</label>
+                                            <label for="art">
+                                                <i class="fa-solid fa-palette"></i>
+                                            문화/예술</label>
                                         </li>
                                         <li>
                                             <input type="radio" id="self-imp" class="category-list" name="category-list">
-                                            <i class="fa-solid fa-book"></i>
-                                            <label for="self-imp">자기개발</label>
+                                            <label for="self-imp">
+                                                <i class="fa-solid fa-book"></i>
+                                            자기개발</label>
                                         </li>
                                         <li>
                                             <input type="radio" id="camping" class="category-list" name="category-list">
-                                            <i class="fa-solid fa-campground"></i>
-                                            <label for="camping">여행/캠핑</label>
+                                            <label for="camping">
+                                                <i class="fa-solid fa-campground"></i>
+                                            여행/캠핑</label>
                                         </li>
                                         <li>
                                             <input type="radio" id="photo" class="category-list" name="category-list">
-                                            <i class="fa-solid fa-photo-film"></i>
-                                            <label for="photo">사진</label>
+                                            <label for="photo">
+                                                <i class="fa-solid fa-photo-film"></i>
+                                            사진</label>
                                         </li>
                                         <li>
                                             <input type="radio" id="farming" class="category-list" name="category-list">
-                                            <i class="fa-solid fa-wheat-awn"></i>
-                                            <label for="farming">농예</label>
+                                            <label for="farming">
+                                                <i class="fa-solid fa-wheat-awn"></i>
+                                            농예</label>
                                         </li>
                                         <li>
                                             <input type="radio" id="cook" class="category-list" name="category-list">
-                                            <i class="fa-solid fa-kitchen-set"></i>
-                                            <label for="cook">요리</label>
+                                            <label for="cook">
+                                                <i class="fa-solid fa-kitchen-set"></i>
+                                            요리</label>
                                         </li>
                                         <li>
                                             <input type="radio" id="interior" class="category-list" name="category-list">
-                                            <i class="fa-solid fa-paint-roller"></i>
-                                            <label for="interior">인테리어</label>
+                                            <label for="interior">
+                                                <i class="fa-solid fa-paint-roller"></i>
+                                            인테리어</label>
                                         </li>
                                         <li>
                                             <input type="radio" id="fan" class="category-list" name="category-list">                                               
-                                            <i class="fa-solid fa-face-grin-hearts"></i>
-                                            <label for="fan">팬클럽</label>
+                                            <label for="fan">
+                                                <i class="fa-solid fa-face-grin-hearts"></i>
+                                            팬클럽</label>
                                         </li>
                                         <li>
                                             <input type="radio" id="economy" class="category-list" name="category-list">
-                                            <i class="fa-solid fa-comments-dollar"></i>
-                                            <label for="economy">경제</label>
+                                            <label for="economy">
+                                                <i class="fa-solid fa-comments-dollar"></i>
+                                            경제</label>
                                         </li>
                                     </ul>
                                 </div>
@@ -159,13 +171,16 @@
                         </div>
             
                     </div>
-
+                    
+                    <!-- 취소시 메인페이지로 다시 돌아가기 -->
+                    <div class="create-btn">
+                        <button type="reset">취소</button>
+                        <button type="submit">완료</button>
+                    </div>
                 </fieldset>
-
             </form>
-            
         </section>
     </main>
-
+    <script src="js/create-band.js"></script>
 </body>
 </html>
