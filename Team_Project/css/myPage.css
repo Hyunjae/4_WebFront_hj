@@ -155,17 +155,14 @@ body{
     margin: 30px auto 0;
     width: 145px;
     height: 145px;
-    border: 6px solid #BFBFBF;
+    /* border: 6px solid #BFBFBF; */
     border-radius: 50%;
     overflow: hidden;
 }
 
-.update-image>i{
-    font-size: 120px;
+.update-image>img{
+    width: 100%;
     display: block;
-    text-align: center;
-    line-height: 150px;
-    color: #bfbfbf;
 }
 
 .profile-btn-area{
@@ -175,7 +172,7 @@ body{
 }
 
 .profile-btn-area{
-    margin-top: 38px;
+    margin-top: 30px;
 }
 
 .profile-btn-area>p{
@@ -218,7 +215,7 @@ body{
 
 .update-profile{
     width: 65%;
-    margin: 55px 25px 0 30px;
+    margin: 60px 25px 0 30px;
 }
 
 /* 행 제목 */
@@ -334,35 +331,4 @@ body{
 .secession-submit{
     font-size: 16px;
     margin-left: 20px;
-}
-
-/* footer */
-footer{
-    width: 100%;
-    height: 100px;
-    background-color: #BFBFBF;
-    
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
-}
-
-footer > p{
-    font-weight: 800;
-    margin: 10px 0;
-}
-
-footer > article > *{
-    font-size: 14px;
-}
-
-footer a{
-    text-decoration: none;
-    color: black;
-}
-
-footer span{
-    padding : 0 10px;
 }
