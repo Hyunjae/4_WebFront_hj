@@ -61,3 +61,4 @@ VALUES(SEQ_IMG_NO.NEXTVAL, '/resources/images/board/',
 
 COMMIT;
 
+SELECT * FROM MEMBER_IMG;
