@@ -126,6 +126,7 @@ fieldset h4{
     right: 0;
     left: 0; */
     cursor: pointer;
+    position: relative;
 }
 
 #select-photo{
@@ -329,4 +330,14 @@ button[type="submit"]{
     border: none;
     background-color: #888;
     color: white;
+}
+
+/* 프로필 이미지 삭제 버튼 */
+#delete-image{
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #888;
 }

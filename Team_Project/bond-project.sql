@@ -62,3 +62,12 @@ VALUES(SEQ_IMG_NO.NEXTVAL, '/resources/images/board/',
 COMMIT;
 
 SELECT * FROM MEMBER_IMG;
+SELECT * FROM GROUP_IMG;
+
+SELECT * FROM "GROUP";
+SELECT * FROM "GROUP_TOPIC";
+
+
+INSERT INTO "GROUP" VALUES(SEQ_GROUP_NO.NEXTVAL, 1, '따르릉따르', DEFAULT, '자전거 동호회입니다. 따릉이도 환영해요. 허벅지 근육 득근합시다.', 'Y', 0);
+
+
