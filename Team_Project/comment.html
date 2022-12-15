@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/comment.css">
+    <title>comment</title>
+    <script src="https://kit.fontawesome.com/785870d879.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <main>
+
+
+        <!-- 댓글조회 -->
+        <section class="replyContent-area">
+            <!-- 댓글 한개 -->
+            <div class="replyOne">
+                <!-- 댓글 작성자 이미지 -->
+                <div class="replyMember-img">
+                    <img src="images/user-icon.png" class="replyMemberImage">
+                </div>
+                <div class="replyContent">
+                    <strong class="replyMember-name">김순자</strong>
+                    <div class="re-reply-content">댓글 내용들이 쭉 나올거야</div>
+                    <div class="reply-info">
+                        <span class="replyDate">2022년 10월 29일 오후 11:42</span>
+                        <p>•</p>
+                        <div class="replyLike">
+                            <i class="fa-regular fa-thumbs-up"></i>&nbsp;
+                            <p>좋아요</p>&nbsp;
+                            <span class="count-replyLike">?</span>
+                        </div>
+                        <p>•</p>
+                        <span>답글쓰기</span>
+                    </div>
+                </div>
+                <div class="moreView" id="replymoreView">
+                    <label for="post-moreView">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </label>
+                    <ul class="moreView-menu">
+                        <li>
+                            <a href="">글 수정</a>
+                        </li> 
+                        <li>
+                            <a href="">삭제하기</a>
+                        </li>
+                        <li>
+                            <a href="">신고하기</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- 덧글 조회 -->
+            <section class="re-replyContent-area">
+                <!-- 댓글 한개 -->
+                <div class="replyOne">
+                    <!-- 댓글 작성자 이미지 -->
+                    <div class="re-replyMember-img">
+                        <img src="images/user-icon.png" class="replyMemberImage">
+                    </div>
+                    <div class="re-replyContent">
+                        <strong class="replyMember-name">김순자</strong>
+                        <div class="reply-content">댓글 내용들이 쭉 나올거야</div>
+                        <div class="reply-info">
+                            <span class="replyDate">2022년 10월 29일 오후 11:42</span>
+                            <p>•</p>
+                            <div class="replyLike">
+                                <i class="fa-regular fa-thumbs-up"></i>&nbsp;
+                                <p>좋아요</p>&nbsp;
+                                <span class="count-replyLike">?</span>
+                            </div>
+                            <p>•</p>
+                            <span>답글쓰기</span>
+                        </div>
+                    </div>
+                    <div class="moreView" id="replymoreView">
+                        <label for="post-moreView">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </label>
+                    </div>
+                </div>
+                <!-- 댓글 한개 -->
+                <div class="replyOne">
+                    <!-- 댓글 작성자 이미지 -->
+                    <div class="re-replyMember-img">
+                        <img src="images/user-icon.png" class="replyMemberImage">
+                    </div>
+                    <div class="re-replyContent">
+                        <strong class="replyMember-name">김순자</strong>
+                        <div class="reply-content">댓글 내용들이 쭉 나올거야</div>
+                        <div class="reply-info">
+                            <span class="replyDate">2022년 10월 29일 오후 11:42</span>
+                            <p>•</p>
+                            <div class="replyLike">
+                                <i class="fa-regular fa-thumbs-up"></i>&nbsp;
+                                <p>좋아요</p>&nbsp;
+                                <span class="count-replyLike">?</span>
+                            </div>
+                            <p>•</p>
+                            <span>답글쓰기</span>
+                        </div>
+                    </div>
+                    <div class="moreView" id="replymoreView">
+                        <label for="post-moreView">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </label>
+                    </div>
+                </div>
+            </section>
+        </section>
+    
+        <!-- 댓글 작성 -->
+        <div class="replyWrite-toolbar">
+            <div class="replyWrite">
+                <div class="replyWrite-img">
+                    <img src="images/user-icon.png">
+                </div>
+                <div class="replyWrite-input">
+                    <textarea id="replyWrite-Content" cols="20" rows="1" 
+                    onkeydown="autoResizeTextarea()" onkeyup="autoResizeTextarea()"
+                    placeholder="댓글을 남겨주세요" maxlength="4000"></textarea>
+                </div>
+            </div>
+            <div class="send-btn">
+                <button>보내기</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/comment.js"></script>
+</body>
+</html>
